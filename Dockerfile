@@ -1,5 +1,5 @@
-FROM registry.redhat.io/rhel
+FROM registry.redhat.io/ubi8/ubi
 MAINTAINER Gerry Setiawan <gerrysetiawan@protonmail.com>
-RUN yum update && yum install nginx -y
+RUN dnf update && dnf install nginx -y
 ENTRYPOINT ["sleep"]
 CMD ["600"]
