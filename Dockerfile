@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/rhel7/7-released
+FROM registry.redhat.io/rhel7/rhel
 MAINTAINER Gerry Setiawan <gerrysetiawan@protonmail.com>
 WORKDIR /opt/
 RUN wget https://developers.redhat.com/content-gateway/file/jboss-eap-6.4.0.GA.zip
