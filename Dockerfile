@@ -1,5 +1,7 @@
-FROM docker.io/ubuntu
+FROM rhel7/7-released
 MAINTAINER Gerry Setiawan <gerrysetiawan@protonmail.com>
-RUN apt update && apt install nginx -y
+WORKDIR /opt/
+RUN wget https://developers.redhat.com/content-gateway/file/jboss-eap-6.4.0.GA.zip
+RUN unzip jboss-eap-6*
 ENTRYPOINT ["sleep"]
 CMD ["600"]
